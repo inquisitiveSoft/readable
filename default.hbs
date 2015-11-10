@@ -13,9 +13,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
     {{! Style'n' Scripts }}
-    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway:400,700"/>
+    <link rel="stylesheet" type="text/css" href="{{asset "css/bootstrap.min.css"}}"/>
+    <link rel="stylesheet" type="text/css" href="{{asset "css/font-awesome.min.css"}}">
     <link rel="stylesheet" type="text/css" href="{{asset "css/custom.css"}}"/>
 
     {{! Ghost outputs important style and meta data with this tag }}
@@ -44,14 +43,11 @@
             <footer class="site-footer">
                 <div class="row">
                     <div class="col-lg-12">
-                        <a href="{{@blog.url}}/rss/"><span class="glyphicon glyphicon-plane"></span> Subscribe</a>
-
                         <div class="text-muted">
                             <section class="copyright">All content copyright <a href="/">{{@blog.title}}</a> &copy;
                                 2015 &bull; All rights reserved.
                             </section>
-                            <section class="poweredby">Proudly published with <a href="http://ghost.org">Ghost</a>
-                            </section>
+                            <section class="poweredby">Published with <a href="http://ghost.org">Ghost</a>  &bull; <a href="{{@blog.url}}/rss/">Subscribe to RSS</a></section>
                         </div>
                     </div>
                 </div>

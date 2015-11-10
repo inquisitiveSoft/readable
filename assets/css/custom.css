@@ -1,3 +1,9 @@
+/* @override 
+	http://blog.inquisitivesoftware.com/assets/css/custom.css?v=52849991cb
+	http://blog.inquisitivesoftware.com/assets/css/custom.css?v=0bf239338e
+	http://blog.inquisitivesoftware.com/assets/css/custom.css?v=bc6454419f
+	http://blog.inquisitivesoftware.com/assets/css/custom.css?v=d211bca113 */
+
 /*
  *
  * Globals
@@ -7,20 +13,43 @@
 a,
 a:focus,
 a:hover {
-    color: #444;
+	color: #3399cf;
 }
 
 h1 {
     margin: .67em 0;
-    padding-top: 25px;
-    font-size: 2em;
+    padding-top: 1em;
+    font-size: 1.4em;
 }
 
+h2 {
+    padding-top: 1em;
+    font-size: 1.2em;
+}
+
+h3 {
+    padding-top: 0.5em;
+}
+
+
+h3.masthead-brand {
+	font-size: 1.04em;
+	text-transform: lowercase;
+}
+
+h3.masthead-brand, .masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+	color: #c0c0c0;
+}
+
+
 .masthead {
-    background: rgba(255, 255, 255, 0.9);
-    border: 0 solid white;
+    background: rgba(246, 246, 246, 0.95);
+    border: 0 solid #f6f6f6;
     border-bottom-width: 1px;
 }
+
 
 /* Custom default button */
 
@@ -44,16 +73,18 @@ h1 {
 html,
 body {
     height: 100%;
-    background-color: #ffffff;
-    font-family: 'Raleway', sans-serif;
+	background: #f6f6f6;
+	
+	font-family: "Avenir-Roman", "helvetica neue", tahoma, helvetica, arial, san-serif;
     line-height: 1.6;
 }
 
 body {
+    font-size: 15px;
     color: rgba(0, 0, 0, 0.8);
-    font-size: 22px;
     text-align: center;
 }
+
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 
@@ -81,9 +112,9 @@ body {
 /* Padding for spacing */
 
 .inner {
-    padding-top: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-top: 1em;
+    padding-left: 1.3em;
+    padding-right: 2em;
 }
 
 /*
@@ -108,12 +139,13 @@ body {
 .masthead-nav > li > a {
     padding-right: 0;
     padding-left: 0;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 13px;
+    font-weight: 500;
     color: #444;
     /* IE8 proofing */
     color: rgba(68, 68, 68, 1)
     border-bottom: 2px solid transparent;
+    text-transform: lowercase;
 }
 
 .masthead-nav > li > a:hover,
@@ -125,8 +157,8 @@ body {
 .masthead-nav > .active > a,
 .masthead-nav > .active > a:hover,
 .masthead-nav > .active > a:focus {
-    color: #444;
-    border-bottom-color: #444;
+    color: #999;
+    border-bottom-color: #999;
 }
 
 @media (min-width: 768px) {
@@ -167,12 +199,12 @@ body {
 }
 
 .site-footer {
-    font-size: 14px;
-    /*height: 142px;*/
+    font-size: 11px;
+    margin-bottom: 3em;
 }
 
 .footer-info {
-    font-size: 14px;
+    font-size: 12px;
 }
 
 /*
@@ -197,7 +229,7 @@ body {
  * Affix and center
  *   
  */
-@media (min-width: 768px) {
+@media (min-width: 560px) {
     /* Pull out the header and footer */
     .masthead {
         position: fixed;
@@ -218,23 +250,14 @@ body {
     .site-wrapper-inner-centered {
         vertical-align: middle;
     }
-
-    /* Handle the widths */
+	
     .masthead,
     .mastfoot,
     .cover-container {
-        width: 100%;
-        /* Must be percentage or pixels for horizontal alignment */
+        width: 500px;
     }
 }
 
-@media (min-width: 992px) {
-    .masthead,
-    .mastfoot,
-    .cover-container {
-        width: 700px;
-    }
-}
 
 /*
  *:q
@@ -269,6 +292,10 @@ code {
     padding-top: 25px;
 }
 
+span.page-number {
+	font-size: 0.8em;
+}
+
 .post-foot {
     padding-bottom: 25px;
     position: relative;
@@ -299,3 +326,10 @@ code {
 
 
 
+blockquote, pre code, code {
+	font-size: 0.9em;
+}
+
+style {
+	
+}
